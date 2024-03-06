@@ -69,5 +69,81 @@ namespace TriangleTest
             // Assert
             Assert.AreEqual("An isosceles triangle is formed", result);
         }
+
+        [Test]
+        public void ValidScalene_Input15and16and17_OutputValidScalene()
+        {
+            // Arrange
+            int side1 = 3;
+            int side2 = 4;
+            int side3 = 5;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            // Assert
+            Assert.AreEqual("A scalene triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidScalene_Input18and19and20_OutputValidScalene()
+        {
+            // Arrange
+            int side1 = 5;
+            int side2 = 12;
+            int side3 = 13;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            // Assert
+            Assert.AreEqual("A scalene triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidScalene_Input21and22and23_OutputValidScalene()
+        {
+            // Arrange
+            int side1 = 8;
+            int side2 = 15;
+            int side3 = 17;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            // Assert
+            Assert.AreEqual("A scalene triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidScalene_Input24and25and26_OutputValidScalene()
+        {
+            // Arrange
+            int side1 = 7;
+            int side2 = 10;
+            int side3 = 12;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            // Assert
+            Assert.AreEqual("A scalene triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidScalene_Input28and28and29_OutputValidScalene()
+        {
+            // Arrange
+            int side1 = 9;
+            int side2 = 12;
+            int side3 = 15;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            // Assert
+            Assert.AreEqual("A scalene triangle is formed", result);
+        }
+
     }
 }
