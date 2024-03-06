@@ -16,7 +16,6 @@ namespace TriangleTest
         [Test]
         public void ValidEquilateral_Input60and60and60_OutputValidEquilateral()
         {
-            int a;
             int firstSide = 1;
             int secondSide = 1;
             int thirdSide = 1;
@@ -26,6 +25,49 @@ namespace TriangleTest
             string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
             Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidIsosceles_Input2and2and3_OutputValidIsosceles()
+        {
+            int firstSide = 2;
+            int secondSide = 2;
+            int thirdSide = 3;
+
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual("An isosceles triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidIsosceles_Input3and2and2_OutputValidIsosceles()
+        {
+            // Arrange
+            int firstSide = 3;
+            int secondSide = 2;
+            int thirdSide = 2;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual("An isosceles triangle is formed", result);
+        }
+
+        [Test]
+        public void ValidIsosceles_Input2and3and2_OutputValidIsosceles()
+        {
+            // Arrange
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 2;
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual("An isosceles triangle is formed", result);
         }
     }
 }
