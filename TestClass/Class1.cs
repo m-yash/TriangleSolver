@@ -16,6 +16,7 @@ namespace TriangleTest
         [Test]
         public void ValidEquilateral_Input60and60and60_OutputValidEquilateral()
         {
+            int a;
             int firstSide = 1;
             int secondSide = 1;
             int thirdSide = 1;
